@@ -1,0 +1,9 @@
+# Camera and processing configuration for dog-detection POC
+source: 0  # 0 for default webcam, or RTSP/HTTP URL string
+detect_interval: 30  # run detection every N frames
+motion_min_area: 5000  # min contour area to consider as object
+nervous_window: 30  # number of centroid samples to compute speed
+nervous_speed_thresh: 5.0  # pixels/frame threshold to flag nervous movement
+show_window: true
+model_path: null  # optional: path or URL to ONNX detector
+audio: false  # whether to attempt audio capture (not implemented in POC)
